@@ -1,0 +1,46 @@
+﻿<Window x:Class="wpf_ui_database.updateItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_ui_database"
+        mc:Ignorable="d"
+        Title="updateItem" Height="330" Width="300">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="33,41,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="nametextBox" HorizontalAlignment="Left" Height="23" Margin="133,41,0,0" TextWrapping="Wrap" Text="Menu Item" VerticalAlignment="Top" Width="120"/>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="33,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Category"/><LineBreak/><Run/></TextBlock>
+        <ComboBox x:Name="categorycomboBox" HorizontalAlignment="Left" Margin="133,74,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem IsSelected="True">Meat</ComboBoxItem>
+            <ComboBoxItem>Fish</ComboBoxItem>
+            <ComboBoxItem>Vega</ComboBoxItem>
+            <ComboBoxItem>Drinks</ComboBoxItem>
+            <ComboBoxItem>Alcohol Drink</ComboBoxItem>
+        </ComboBox>
+
+
+
+
+        <TextBlock HorizontalAlignment="Left" Margin="33,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Price"/><LineBreak/><Run/></TextBlock>
+
+        <TextBox x:Name="priceBox" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="133,113,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="salesdayBox" HorizontalAlignment="Left" Margin="133,159,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem IsSelected="True">None</ComboBoxItem>
+            <ComboBoxItem>Monday</ComboBoxItem>
+            <ComboBoxItem>Tuesday</ComboBoxItem>
+            <ComboBoxItem>Wednesday</ComboBoxItem>
+            <ComboBoxItem>Thursday</ComboBoxItem>
+            <ComboBoxItem>Friday</ComboBoxItem>
+            <ComboBoxItem>Saturday</ComboBoxItem>
+            <ComboBoxItem>Sunday</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="33,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Sales Day"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="33,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Sale Price"/>
+        <TextBox x:Name="salespriceBox" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="133,201,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="updateWindowSubmit" Content="Update Item" HorizontalAlignment="Left" Margin="108,255,0,0" VerticalAlignment="Top" Width="75" Click="updateWindowSubmit_Click"/>
+
+
+    </Grid>
+</Window>
