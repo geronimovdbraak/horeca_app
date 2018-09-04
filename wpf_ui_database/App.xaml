@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:wpf_ui_database"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <!-- this can be removed-->
     </Application.Resources>
 </Application>
