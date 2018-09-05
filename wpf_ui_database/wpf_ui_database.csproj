@@ -63,6 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TestClass.cs" />
     <Compile Include="updateItem.xaml.cs">
       <DependentUpon>updateItem.xaml</DependentUpon>
     </Compile>
